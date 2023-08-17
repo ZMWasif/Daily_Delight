@@ -17,7 +17,7 @@ const Header = () => (
         ingredients harmonize, crafting exquisite dishes that transport you to a
         world of tasteful delights and captivating ambiance.{" "}
       </p>
-      <Button as={Link} to="/menu" type="button" className="custom__button">
+      <Button as={Link} to="/menu" type="button" className="menu-btn">
         Explore Menu
       </Button>
     </div>

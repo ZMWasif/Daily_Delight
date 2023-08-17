@@ -1,6 +1,6 @@
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import pizza from "./pizza.jpg";
+import burger from "./burger.jpg";
+import steak from "./steak.jpg";
+import desserts from "./desserts.jpg";
 
-export { backend, creator, mobile, web };
+export { pizza, burger, steak, desserts };

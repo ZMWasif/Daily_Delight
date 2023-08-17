@@ -1,25 +1,29 @@
 import images from "../constants/images";
-import meal from "../constants/images";
+import meal from "../assets/meal.mp4";
 import data from "../constants/images";
 
-import { mobile, backend, creator, web } from "../assets";
+import { pizza, burger, steak, desserts } from "../assets";
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Pizza",
+    image: pizza,
+    price: "$15",
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Burger",
+    image: burger,
+    price: "$12",
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Steak",
+    image: steak,
+    price: "$25",
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Desserts",
+    image: desserts,
+    price: "$10",
   },
 ];
 

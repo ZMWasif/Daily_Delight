@@ -37,7 +37,7 @@ const Login = () => {
           </form>
           <p>
             <small>
-              New to Doctors Smile?{" "}
+              New to Daily Delight?{" "}
               <Link className="text-primary" to="/signup">
                 Create a New Account
               </Link>

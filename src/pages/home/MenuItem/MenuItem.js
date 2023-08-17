@@ -5,12 +5,13 @@ import { styles } from "../../../styles";
 import { services } from "../../../constants";
 import { SectionWrapper } from "../../../hoc";
 import { fadeIn, textVariant } from "../../../utils/motion";
+import { Button } from "react-bootstrap";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+const ServiceCard = ({ index, title, image, price }) => (
+  <Tilt className="xs:w-[250px]">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card "
+      className="w-full p-[1px] bg-slate-900 rounded-[20px] shadow-card "
     >
       <div
         options={{
@@ -18,17 +19,21 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="rounded-[20px] py-4 px-10 min-h-[280px] flex justify-evenly items-center flex-col"
       >
         <img
-          src={icon}
+          src={image}
           alt="web-development"
-          className="w-16 h-16 object-contain"
+          className="w-40 h-full object-contain"
         />
 
         <h3 className="text-white text-[20px] font-bold text-center">
           {title}
         </h3>
+        <h4 className="text-white text-[20px] text-center">{price}</h4>
+        <Button className="text-white text-[20px] font-bold text-center menu-btn">
+          Order Now
+        </Button>
       </div>
     </motion.div>
   </Tilt>
@@ -38,19 +43,23 @@ const MenuItem = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        {/* <p className={styles.sectionSubText}>Introduction</p> */}
+        <h2 className="headtext__cormorant">
+          Tasty Lunches. Romantic Dinners. Enjoy!
+        </h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-white text-[17px] max-w-3xl leading-[30px] p__opensans pr-8"
+        style={{ margin: "2rem 0" }}
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Indulge in delectable lunches, savor intimate romantic dinners, and
+        relish memorable moments while dining at our restaurant. Discover
+        flavorful culinary creations that elevate your dining experience,
+        whether it's a delightful midday meal or a cozy evening for two. Unwind,
+        celebrate, and create lasting memories in a charming ambiance that
+        invites you to enjoy every bite and cherish special occasions.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

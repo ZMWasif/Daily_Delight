@@ -5,6 +5,7 @@ import SpecialMenu from "./SpecialMenu/SpecialMenu";
 import Chef from "./Chef/Chef";
 import Intro from "./Intro/Intro";
 import FindUs from "./FindUs/FindUs";
+import Newsletter from "../Shared/Newsletter";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Chef></Chef>
       <Intro></Intro>
       <FindUs></FindUs>
+      <Newsletter></Newsletter>
     </div>
   );
 };

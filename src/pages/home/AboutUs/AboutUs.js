@@ -2,6 +2,8 @@ import React from "react";
 import DD from "../../../assets/dd-logo-11550724751eajud0bkbc-removebg-preview.png";
 import { images } from "../../../constants";
 import "./AboutUs.css";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => (
   <div
@@ -21,9 +23,9 @@ const AboutUs = () => (
           Our chefs blend passion with creativity to deliver exceptional dishes,
           while our inviting ambiance ensures every visit is a cherished memory.
         </p>
-        <button type="button" className="custom__button">
+        <Button as={Link} to="/about" type="button" className="menu-btn">
           Know More
-        </button>
+        </Button>
       </div>
 
       <div className="app__aboutus-content_knife flex__center">
@@ -38,9 +40,9 @@ const AboutUs = () => (
           the years, our passion for flavor and hospitality evolved, shaping us
           into a beloved culinary destination, cherished by generations.
         </p>
-        <button type="button" className="custom__button">
+        <Button as={Link} to="/history" type="button" className="menu-btn">
           Know More
-        </button>
+        </Button>
       </div>
     </div>
   </div>
