@@ -1,9 +1,6 @@
 import React from "react";
-
-import { SubHeading } from "../header/SubHeading";
 import foodHero from "../../../assets/food_hero.jpg";
 import "./Header.css";
-import MenuItem from "../MenuItem/MenuItem";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
@@ -14,11 +11,11 @@ const Header = () => (
   >
     <div className="app__wrapper_info">
       {/* <SubHeading title="Chase the new flavour" /> */}
-      <h1 className="app__header-h1">The Key To Fine Dining</h1>
+      <h1 className="app__header-h1">A Fusion of Flavors and Ambiance</h1>
       <p className="p__opensans" style={{ margin: "2rem 0" }}>
-        Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
-        morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
-        tellus{" "}
+        Immerse yourself in a symphony of culinary excellence where diverse
+        ingredients harmonize, crafting exquisite dishes that transport you to a
+        world of tasteful delights and captivating ambiance.{" "}
       </p>
       <Button as={Link} to="/menu" type="button" className="custom__button">
         Explore Menu

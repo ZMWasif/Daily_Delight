@@ -1,0 +1,16 @@
+.flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-btn{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(#5c5122, #5e5612);
+    margin: 8px;
+}
+
+.menu-btn:hover{
+    background-image: linear-gradient(#413812, #5c5302);
+}

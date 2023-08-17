@@ -10,7 +10,7 @@ const FindUs = () => (
       </h1>
       <div className="app__wrapper-content">
         <p className="p__opensans">
-          Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 75G
+          Holländische Straße 103, 34127 Kassel, Germany
         </p>
         <p
           className="p__cormorant"

@@ -40,7 +40,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Daily Delight</a>
+        <a href="/" className="btn btn-ghost normal-case text-xl">
+          Daily Delight
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
