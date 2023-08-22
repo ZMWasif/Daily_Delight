@@ -1,5 +1,6 @@
 import React from "react";
 import divider from "../../../src/assets/divider.png";
+import FoodMenus from "./FoodMenus/FoodMenus";
 
 const HappyFood = () => {
   return (
@@ -9,6 +10,9 @@ const HappyFood = () => {
           <h1 className="headtext__cormorant">Happy Hour Food</h1>
           <div className="flex__center">
             <img className="flex__center" src={divider} alt="" />
+          </div>
+          <div>
+            <FoodMenus></FoodMenus>
           </div>
         </div>
       </div>

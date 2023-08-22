@@ -1,0 +1,16 @@
+.gallery-card{
+    width:50%;
+    height: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-height: 40rem;
+min-width: 30rem;
+border-radius: 2rem;
+will-change:contents;
+}
+
+
+
+
