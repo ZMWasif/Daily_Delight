@@ -16,7 +16,6 @@ import PizzaMenu from "./pages/Menu/PizzaMenu";
 import SignUp from "./pages/SignUp/SignUp";
 import RequireAuth from "./pages/home/RequireAuth/RequireAuth";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import MyBookings from "./pages/Dashboard/MyBookings";
 
 function App() {
   return (
@@ -43,7 +42,7 @@ function App() {
             </RequireAuth>
           }
         ></Route>
-        <Route index element={<MyBookings></MyBookings>}></Route>
+
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/happyfood" element={<HappyFood></HappyFood>}></Route>
