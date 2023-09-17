@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
-import BookingModal from "./BookingModal";
+
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 
